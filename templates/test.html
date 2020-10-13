@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="GET" action="/search">
+        <input type="text" name="hostname" placeholder="DomainName" value="{{}}"/>
+        <input type="text" name="server" placeholder="Server"/><br>
+        <input type="radio" id="A" name="query_type" value="A"> <label for="A">A</label>
+        
+        <input type="radio" id="AAAA" name="query_type" value="AAAA"> <label for="AAAA">AAAA</label>
+        
+        <input type="radio" id="MX" name="query_type" value="MX"> <label for="MX">MX</label>   
+        
+        <input type="radio" id="ANY" name="query_type" value="ANY"> <label for="ANY">ANY</label>   
+        
+        <input type="radio" id="CNAME" name="query_type" value="CNAME"> <label for="CNAME">CNAME</label>       
+
+        <input type="radio" id="CAA" name="query_type" value="CAA"> <label for="CAA">CAA</label>       
+
+        <input type="radio" id="NS" name="query_type" value="NS"> <label for="NS">NS</label>
+        
+        <input type="radio" id="PTR" name="query_type" value="PTR"> <label for="PTR">PTR</label> 
+        
+        <input type="radio" id="SOA" name="query_type" value="SOA"> <label for="SOA">SOA</label>    
+        
+        <input type="radio" id="SRV" name="query_type" value="SRV"> <label for="SRV">SRV</label> 
+        
+        <input type="radio" id="TXT" name="query_type" value="TXT"> <label for="TXT">TXT</label>  
+        <br>
+        <input type="checkbox" name="rd"><label for="rd">Recursion Desired</label>
+        
+        <input type="submit" value="LOOKUP">
+    </form>
+
+
+
+</body>
+</html>
